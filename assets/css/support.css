@@ -1,0 +1,71 @@
+header{
+    background-image:none;
+}
+main .support .w-30 {
+    width: 40%;
+}
+main .support .background {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border:5px solid #262626; ;
+}
+main .support .background img{
+    object-fit: contain;
+    height: 110%;
+}
+main .support .bg{
+    width: 58%;
+    background-color: var(--secbackground);
+    border: 3px solid #262626;
+}
+main .support .bg label{
+    margin-bottom:20px ;
+}
+main .support .bg input , main .support .bg textarea {
+    background-color: var(--mainbackground);
+    border: 1px solid #262626;
+    padding: 10px;
+    color: var(--secfontColor);
+}
+main .support .bg input::placeholder ,main .support .bg textarea::placeholder{
+    color:var(--secfontColor) ;
+}
+main .support .bg input:focus ,main .support .bg textarea:focus{
+    box-shadow:0 0 9px #fa0000;
+    color:var(--secfontColor) ;
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+ 
+}
+@media screen and (max-width: 768px) {
+    main .support .w-30 {
+        width: 100%;
+    }
+    main .support .bg{
+        width: 100%;
+        margin-top: 20px;
+    }
+    main .support .bg label{
+        margin-bottom:10px ;
+    }
+}
+@media screen and (max-width: 576px) {
+    main .support .bg .w-50{
+        width: 100% !important;
+    }
+    main .support .bg label{
+        margin-top:20px ;
+    }
+    main .support .bg button{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    };
+
+}
+@media screen and (max-width: 400px) {
+
+}

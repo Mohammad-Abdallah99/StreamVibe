@@ -1,0 +1,94 @@
+header {
+    background-image: none;
+}
+main table {
+    width: 100%;
+    border: 2px solid #262626;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+main table th,
+main table td {
+    padding: 10px;
+    border-right: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+}
+main table tr th:last-child,
+main table tr td:last-child {
+    border-right: none;
+}
+main table tr:last-child td {
+    border-bottom: none;
+}
+main table .Popular {
+    position: relative;
+}
+main table .Popular::after {
+    content: "Popular";
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    background-color: red;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 6px;
+}
+main table td {
+    color: var(--secfontColor);
+    font-size: medium;
+}
+main table th {
+    background-color: var(--secbackground);
+}
+main .supscriptions{
+    background-color: var(--secbackground);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    color:var(--secfontColor);
+    border: 2px solid #262626;
+}
+main .supscriptions .sup_item{
+    flex-grow: 1;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+main .supscriptions .active , main .supscriptions .sup_item:hover{
+    background-color: var(--mainbackground);
+    border-radius: 8px;
+    color: var(--mainfontColor);
+}
+main .blocks{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+    main table .Popular::after {
+        left: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    main .table1{
+        display: none;
+    }
+    main .blocks{
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 400px) {
+
+}

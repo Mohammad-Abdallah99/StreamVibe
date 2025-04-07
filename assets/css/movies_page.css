@@ -1,0 +1,192 @@
+/* start header */
+header{
+    background-image: none;
+}
+header .swiper-slide{
+    height: 80vh;
+    position: relative;
+}
+.bg-red:hover p {
+    transform: translateX(-15%);
+}
+header .swiper-button-next,
+header .swiper-button-prev {
+  top: auto;
+  bottom: 10px;
+  width: 50px;
+}
+header .swiper-button-next::after,
+header .swiper-button-prev::after {
+  font-size: 30px;
+  color: #fff;
+}
+header .slide1{
+    background-image: linear-gradient(transparent , var(--mainbackground)), url(./../img/movies_pages/header/Container.png);
+    background-size: cover;
+}
+header .slide2{
+    background-image: linear-gradient(transparent , var(--mainbackground)), url(./../img/movies_pages/header/a-quiet-place-day-one.jpg);
+    background-size: cover;
+}
+header .slide3{
+    background-image: linear-gradient(transparent , var(--mainbackground)), url(./../img/movies_pages/header/ghostbusters-frozen-empire.jpg);
+    background-size: cover;
+}
+header .slide4{
+    background-image: linear-gradient(transparent , var(--mainbackground)), url(./../img/movies_pages/header/mufasa-the-lion-king.jpg);
+    background-size: cover;
+}
+header .slide5{
+    background-image: linear-gradient(transparent , var(--mainbackground)), url(./../img/movies_pages/header/nezha-2.jpg);
+    background-size: cover;
+}
+/* end header */
+/* end slide-container */
+main .container{
+    border: 1px solid rgb(59, 59, 59);
+}
+main .slide-content{
+    width: 100% !important;
+}
+main .fs-5{
+    position:absolute;
+    top: -1%;
+}
+main .sese{
+    position: absolute;
+    width: 200px;
+    min-width: 200px;
+    height: 60px;
+    top: -5%;
+    right:0%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secbackground) !important;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #262626;
+}
+main .swiper-button-next,
+main .swiper-button-prev {
+  width: 50px;
+  background-color: var(--mainbackground) !important;
+}
+main .swiper-pagination {
+    padding-bottom: 15px;
+}
+main .swiper-button-next::after,
+main .swiper-button-prev::after {
+  font-size: 30px;
+  color: #fff;
+}
+main .slide-container{
+    overflow: visible;
+    width: 100% !important;
+}
+main .sec1 h2{
+    position: absolute;
+    left: 0%;
+}
+main .slide-content{
+	width: 80%;
+    display: flex;
+	justify-content: center;
+	margin: auto;
+	overflow: hidden;
+}
+main .sw1 .card{
+    border-radius: 15px;
+    height: 330px;
+    border:1px rgb(100, 100, 100) solid;
+    position: relative;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.342);
+    transition: all 0.3s ease-in-out;
+}
+main .sw1 .card::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #262626 20%, transparent);
+    pointer-events: none;
+    border-radius: 15px;
+}
+main .sw1 .card .card-image img{
+	width: 50%;
+	height: 120px;
+}
+main .card .image-content .arrow{
+	width: 70px;
+	height: 40px;
+}
+main .sticky-bottom{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+main .sticky-bottom img{
+    transition: all 0.3s ease-in-out;
+}
+main .card:hover{transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform:translateY(-15px)
+}
+main .card:hover .sticky-bottom{
+    background-color: rgba(255, 0, 0, 0.603) !important;
+    border:1px solid red;
+}
+main .sticky-bottom:hover img {
+    transform:rotate(-90deg);
+}
+main .sticky-bottom:hover{
+    scale: 1.1;
+    box-shadow: 0 0 10px red;
+}
+main .slideSection2 .sticky-bottom{
+    bottom: 10%;
+    width: 95%;
+}
+main .sw2 .card{
+    border-radius: 15px;
+    border:1px rgb(100, 100, 100) solid;
+    position: relative;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.342);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+main .slideSection5 .image-content .card-image img{
+    height: 250px;
+}
+/* end slide-container */
+
+
+
+@media screen and (max-width: 1200px) {
+    html,body {
+        font-size:small;
+    }
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+    main .sec1 h2{
+        position: relative;
+    }
+    main .sese{
+        position: relative;
+        min-width: 200px;
+        height: 60px;
+        top: 0%;
+        right:0%;
+    }
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 400px) {
+    header .swiper-button-next,header .swiper-button-prev {
+        display: none;
+    }
+}
